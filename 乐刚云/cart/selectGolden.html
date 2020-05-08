@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择金牌商家</title>
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/style/lib.css">
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/js/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<style>
+	body{color:#282828;}
+	.boxLeft {border-right:1px #E5E5E5 solid;background-color: #FCFCFC;}
+	.e5bot {border-bottom:1px #E5E5E5 solid;}
+	.pl35{padding-left: 35px}
+	.pr35{padding-right: 35px}
+	.selg_photo{width: 48px;height: 60px;}
+	.imageList{overflow-y:auto;}
+	.imageItem{padding-top: 10px;clear:both;cursor: pointer}
+	.imageItem:hover{background-color: #F3F7FD ;}
+	.g8{color: #808080 }
+	.selg_Search{background: #FFFFFF;border: 1px solid #ADADAD;border-radius: 3px;margin:0 35px;height: 34px;line-height: 34px;}
+	.pct85{width: 85%;}
+	.inputnoline {text-indent:1em;border: none;outline: none;padding: 0;margin: 0;background-color: transparent;}
+	.boxRight{padding-top:28px;}
+	.mb8{margin-bottom: 8px}
+	.selg_btnSubmit{width: 288px;height: 40px;line-height: 40px;color:#fff;font-size: 18px;background: #1365E8;border-radius: 3px;text-align: center;text-decoration: none}
+	.selg_btnSubmit:hover{background-color: #1153BC}
+	.selg_bottom{position: fixed;bottom: 40px;width: 50%}
+	.commendBox{margin:10px 0 5px  40px;}
+	.selg_blue{color:#3885FF;text-decoration: none}
+	.selg_blue:hover{color:#1153BC;}
+	.imageItem:hover > .selg_iconDel{width:20px;height:20px;background:url(http://resource.lgsteel.cn/mainSite19/images/cart/del-gray.png);display: inline-block;right:35px;top:40%;}
+	.sContent{display:none;position:absolute;max-height: 240px;overflow-y:auto;background: #FFFFFF;box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);-webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);-ms-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);-moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);-o-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);border-radius: 3px;z-index: 9}
+	.sContentList{line-height: 40px;text-indent: 1em;display: block;color: #282828;}
+	.sContentList:hover{color:#1365E8 ;}
+	.selg_dimg{width: 20px;height: 30px;margin-right: 10px;overflow: hidden;vertical-align: middle;}
+	</style>
+</head>
+<body>
+	<div class="pct50 l boxLeft ">
+		<div class="pt20 ">
+			<div class="selg_Search">
+				<input type="text" class="pct85 inputnoline lh30" autocomplete="off" placeholder="请输入姓名、区域" onkeyup="searchTipImageList(this);" id="imagesSearchCode" />
+				<div class="sContent">
+					
+				</div>
+				<a href="javascript:void(0)"><img src="http://resource.lgsteel.cn/mainSite19/images/cart/search-little.png" class="vm"></a>
+			</div>
+			<div class="commendBox">
+		    	合作过的金牌商家：
+		        <a href="javaScript:;" class="selg_blue">2倪陈</a>
+		        <a href="javaScript:;" class="selg_blue">郁志伟</a>
+		        <a href="javaScript:;" class="selg_blue">叶勇</a>
+		    </div>		    
+			<div class="imageList">
+				<div  id="3530" onclick="selItemLeft(this)" class="imageItem pl35 pr35">
+					<input type="hidden" class="id" value="3530">
+					<input type="hidden" class="custID" value="7403">
+					<input type="hidden" class="custName" value="韦小宝">
+					<input type="hidden" class="oaLoginID" value="13144444444">
+					<input type="hidden" class="area" value="上海市">
+					<input type="hidden" class="areaID" value="">
+					<input type="hidden" class="mobile" value="18502193638">
+					<input type="hidden" class="sort" value="涂镀类,不锈钢,板材类,建材类,优钢类,管材类,卷板类,型材类,加工">
+					<input type="hidden" class="imagepathsmall" value="http://fs.lgsteel.cn:8080/file/upload/image/knowledge/2014/2014-11-15B/7.jpg">
+					<input type="hidden" class="imageType" value="1">
+					<div class="ovh e5bot pb10">
+						<img src="http://fs.lgsteel.cn:8080/file/upload/image/knowledge/2014/2014-11-15B/7.jpg" class="l selg_photo mr15">
+		    			<div class="l pt10 pct75 ell ovh">
+		    				<div class="f16 mb5 selg_name">韦小宝</div>
+		    				<div class="g8 l pct50 ell selg_tel">18502193638</div><div class="g8 ell l pct50 selg_city" title="上海市">上海</div>
+		    			</div> 		
+					</div>		    		
+	    		</div><!-- imageItem end -->
+	    		<div  id="3515" onclick="selItemLeft(this)" class="imageItem pl35 pr35">
+					<input type="hidden" class="id" value="3515">
+					<input type="hidden" class="custID" value="7376">
+					<input type="hidden" class="custName" value="汤小唯">
+					<input type="hidden" class="oaLoginID" value="18011111888">
+					<input type="hidden" class="area" value="香港特别行政区">
+					<input type="hidden" class="areaID" value="">
+					<input type="hidden" class="mobile" value="159554973170">
+					<input type="hidden" class="sort" value="不锈钢,板材类,优钢类,管材类">
+					<input type="hidden" class="imagepathsmall" value="http://fs.lgsteel.cn:8080/file/upload/workflow2/2018/2018-07-04/1530690150247.jpg">
+					<input type="hidden" class="imageType" value="1">
+					<div class="ovh e5bot pb10">
+						<img src="http://fs.lgsteel.cn:8080/file/upload/workflow2/2018/2018-07-04/1530690150247.jpg" class="l selg_photo mr15">
+		    			<div class="l pt10 pct75 ell ovh">
+		    				<div class="f16 mb5 selg_name">汤小唯</div>
+		    				<div class="g8 l pct50 ell selg_tel">159554973170</div><div class="g8 ell l pct50 selg_city" title="香港特别行政区">香港特别行政区</div>
+		    			</div> 		
+					</div>		    		
+	    		</div><!-- imageItem end -->
+	    		<div  id="1054" onclick="selItemLeft(this)" class="imageItem pl35 pr35">
+					<input type="hidden" class="id" value="1054">
+					<input type="hidden" class="custID" value="3588">
+					<input type="hidden" class="custName" value="唐一菲">
+					<input type="hidden" class="oaLoginID" value="tangyf">
+					<input type="hidden" class="area" value="宁波">
+					<input type="hidden" class="areaID" value="24">
+					<input type="hidden" class="mobile" value="15221566431">
+					<input type="hidden" class="sort" value="热轧类（热轧、带钢、酸洗、中厚板、型材、建材、管材、棒材）,冷轧类（冷轧、电工钢、扎硬、彩涂、热镀锌、电镀锌、不锈钢、铝材）,加工">
+					<input type="hidden" class="imagepathsmall" value="http://fs.lgsteel.cn:8080/file/upload/img/2015-02-06/1423225446973.jpg">
+					<input type="hidden" class="imageType" value="1">
+					<div class="ovh e5bot pb10">
+						<img src="http://fs.lgsteel.cn:8080/file/upload/img/2015-02-06/1423225446973.jpg" class="l selg_photo mr15">
+		    			<div class="l pt10 pct75 ell ovh">
+		    				<div class="f16 mb5 selg_name">唐一菲</div>
+		    				<div class="g8 l pct50 ell selg_tel">15221566431</div><div class="g8 ell l pct50 selg_city" title="上海市">上海</div>
+		    			</div> 		
+					</div>		    		
+	    		</div><!-- imageItem end -->
+	    		
+
+	    		
+			</div><!-- imageList end -->
+		</div>
+	</div><!-- boxLeft end -->
+
+	<div class="pct50 l boxRight ml-1 rel">
+		<div class="cl pl35 mb8">已选择金牌商家：</div>
+		<div class="imageList innerBox">
+			<!-- <div  id="3530" onclick="delItem(this)" class="imageItem pl35 pr35 rel">
+					<input type="hidden" class="id" value="3530">
+					<input type="hidden" class="custID" value="7403">
+					<input type="hidden" class="custName" value="韦小宝">
+					<input type="hidden" class="oaLoginID" value="13144444444">
+					<input type="hidden" class="area" value="上海市">
+					<input type="hidden" class="areaID" value="">
+					<input type="hidden" class="mobile" value="18502193638">
+					<input type="hidden" class="sort" value="涂镀类,不锈钢,板材类,建材类,优钢类,管材类,卷板类,型材类,加工">
+					<input type="hidden" class="imagepathsmall" value="http://fs.lgsteel.cn:8080/file/upload/image/knowledge/2014/2014-11-15B/7.jpg">
+					<input type="hidden" class="imageType" value="1">
+					<i class="selg_iconDel abs"></i>
+					<div class="ovh e5bot pb10">
+						<img src="http://fs.lgsteel.cn:8080/file/upload/image/knowledge/2014/2014-11-15B/7.jpg" class="l selg_photo mr15">
+		    			<div class="l pt10 pct75 ell ovh">
+		    				<div class="f16 mb5">韦小宝</div>
+		    				<div class="g8 l pct50 ell">18502193638</div><div class="g8 ell l pct50" title="上海市">上海</div>
+		    			</div> 		
+					</div>		    		
+	    		</div> --><!-- imageItem end -->
+	    	</div>
+	    <div class="auto tc selg_bottom"><a href="javascript:void(0)" class="selg_btnSubmit dib">确定</a></div>
+	</div>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script>
+		$(function(){
+			setDisabled();  //右侧没内容的时候按钮不可点击
+			$(window).on("click",function(){
+				$(".sContent ").hide();
+			})
+		})
+
+		$(document).ready(function(){
+			$(".boxLeft ").height( $(window).height());
+			$(".imageList").height($(window).height()-$(".selg_Search").outerHeight(true)-$(".commendBox").outerHeight(true)-20);
+		
+		$(window).resize(function(){
+			$(".boxLeft ").height( $(window).height());
+			$(".imageList").height($(window).height()-180);
+		})
+
+		$(window).load(function(){
+		    $(".imageList").mCustomScrollbar({
+			    theme:"minimal-dark"
+			});
+			$(".sContent").mCustomScrollbar({
+			    theme:"minimal-dark"
+			});			 			 
+	    });   
+	})
+
+		function searchTipImageList(obj){
+			var html='<span class="sContentList poi" href="javascript:void(0)" onclick="searchImageByNameArea(\'韦小宝\',\'上海市\')" data="韦小宝" area="上海市">'+
+					'	<img src="http://fs.lgsteel.cn:8080/file/upload/image/knowledge/2014/2014-11-15B/7.jpg" class="selg_dimg">'+
+					'	<span class="dib pct40">韦小宝</span>'+
+					'	<span class="dib pct40">上海市</span>'+
+					'</span>';
+					var mytxt="";
+					 for (var i=0;i<Math.abs(Math.floor(Math.random()*10)+1);i++){
+				     	mytxt=mytxt+html;
+				     } //生成静态数据
+
+				     $(obj).next(".sContent ").css({"width":$(obj).parent(".selg_Search").width(),"top":$(obj).offset().top+$(obj).height()+10});
+				     $(obj).next(".sContent ").find(".mCSB_container").html(mytxt);
+					 $(obj).mCustomScrollbar("update");
+					 $(obj).next(".sContent ").show();
+		}
+
+		function searchImageByNameArea(str,city){
+			$("#imagesSearchCode").val(str+" "+city);
+			$(".sContent").hide();
+		}
+
+
+		function selItemLeft(obj){
+			var str="",tel="",city="",photo="",name="",id="";
+			id=$(obj).attr("id");
+			photo=$(obj).find(".selg_photo").attr("src");
+			name=$(obj).find(".selg_name").text();
+			tel=$(obj).find(".selg_tel").text();
+			city=$(obj).find(".selg_city").text()
+			str=" <div id='"+id+"' class='imageItem pl35 pr35 rel' onclick='delItem(this)'>"
+				+"<input type='hidden'  class='id' value='"+id+"'>"
+				+"	<input type='hidden' class='custID' value='"+$(obj).find(".custID").val()+"'>"
+				+"	<input type='hidden' class='custName' value='"+name+"'>"
+				+"	<input type='hidden' class='oaLoginID' value='"+$(obj).find(".oaLoginID").val()+"'>"
+				+"	<input type='hidden' class='area' value='"+city+"'>"
+				+"	<input type='hidden' class='areaID' value='"+$(obj).find(".areaID").val()+"'>"
+				+"	<input type='hidden' class='mobile' value='"+tel+"'>"
+				+"	<input type='hidden' class='sort' value='"+$(obj).find(".sort").val()+"'>"
+				+"	<input type='hidden' class='imagepathsmall' value='"+photo+"'>"
+				+"	<input type='hidden' class='imageType' value='"+$(obj).find(".imageType").val()+"'>"
+				+"  <i class='selg_iconDel abs'></i>"
+				+"<div class='ovh e5bot pb10'>"
+				+"		<img src='"+photo+"' class='l selg_photo mr15 mCS_img_loaded'>"
+		    	+"		<div class='l pt10 pct75 ell ovh'>"
+		    	+"			<div class='f16 mb5'>"+name+"</div>"
+		    	+"			<div class='g8 l pct50 ell'>"+tel+"</div><div class='g8 ell l pct50' title='"+city+"'>"+city+"</div>"
+		    	+"		</div> 	"	
+				+"	</div>"
+				+" </div>";
+
+			$(".innerBox").html(str);
+			$(".selg_btnSubmit ").removeClass("disabled");
+		}
+
+		function delItem(obj){
+			$(obj).remove();
+			setDisabled();
+		}
+
+		function setDisabled(){
+			if($(".innerBox").find(".imageItem").length==0){
+				$(".selg_btnSubmit ").addClass("disabled");
+			}
+		}
+	</script>
+	
+
+
+</body>
+</html>

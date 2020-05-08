@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>找物流_集聚行业精英_发展产业互联</title>
+	<meta content="乐刚网是“国内首创的”集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品(如热轧、冷轧、中厚板、彩涂、管材等钢材类产品)综合性电商服务平台。" name="description">
+    <meta content="乐刚网是“国内首创的”集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品(如热轧、冷轧、中厚板、彩涂、管材等钢材类产品)综合性电商服务平台。" name="keywords">
+    <link rel="icon" href="http://resource.lgsteel.cn/public/images/favicon.ico" mce_href="http://resource.lgsteel.cn/public/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/style/lib.css">
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lg19laydate.css">
+	<!-- <link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908.css?v=3.0"> -->
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/js/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../css/lgSite1908.css?v=4.0">
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/layer/3.1.1/layer.js"></script>
+	<style>
+		.procInput > .logicInput,.procInput >.inputnoline {height: 26px;}
+	</style>
+</head>
+<body>
+	<div class="innerPage"><script type="text/javascript" src="../js/header.js"></script></div>
+	<div class="logistbg mt-20" >
+		<div class="w1180 auto">
+			<div class="mallbanner"></div>
+			<div class="mallsearch">
+				<div class="pt20 pb20 pl40 pr40 f12">
+					<div class="logistPublic mb10 tc"><a href="javascript:void(0)" class="vm f0" onclick="logistPub()"><span class="vm f20 f426">快捷发布物流需求</span><i class="dib h_icon logistPubIconBut vm ml10"></i></a></div>
+					<div class="cl ovh f12">					
+
+						<div class="cl lh28 ovh mb10">
+							<span class="gADA">运货方式：</span>
+							<span class="dib pl10">
+								<a class="mallSearchList dib" href="javascript:void(0)" onclick="setItemJl(this)">整车</a>
+								<a class="mallSearchList dib " href="javascript:void(0)" onclick="setItemJl(this)">包车</a>
+								<a class="mallSearchList dib " href="javascript:void(0)" onclick="setItemJl(this)">配车</a>
+							</span>
+						</div>
+
+						<div class="l">
+							<span class="dib procInput w150 vm bgfc">
+								<i class="dib logistDot1 mr5"></i><input type="text" class="inputnoline lh26 pct80 searchInputDot logicInput" id="cys_startPlaceName" name="resource.minWeight" placeholder="始发仓">
+								<div class="sContent">
+									<div class="sContentList ell poi" sid="2583" onclick="setStartPlaceVal(this,event)">宝金库</div>
+									<div class="sContentList ell poi" sid="2575" onclick="setStartPlaceVal(this,event)">青岛怡升昌供应链库</div>
+									<div class="sContentList ell poi" sid="2583" onclick="setStartPlaceVal(this,event)">宝金库</div>
+									<div class="sContentList ell poi" sid="2575" onclick="setStartPlaceVal(this,event)">青岛怡升昌供应链库</div>
+									<div class="sContentList ell poi" sid="2583" onclick="setStartPlaceVal(this,event)">宝金库</div>
+									<div class="sContentList ell poi" sid="2575" onclick="setStartPlaceVal(this,event)">青岛怡升昌供应链库</div>
+								</div>
+							</span>
+							<span class="dib tc w18"><i class="dib h_icon  logistArrow1"></i></span>
+							<span class="dib procInput w150 vm bgfc">
+								<i class="dib logistDot2 mr5"></i><input type="text" class="inputnoline lh26 pct80 searchInputDot logicInput" id="cys_endPlaceName" name="resource.minWeight" placeholder="目的地">
+								<div class="sContent">
+									<div class="sContentList ell poi" sid="2583" onclick="setStartPlaceVal(this,event)">宝金库</div>
+									<div class="sContentList ell poi" sid="2575" onclick="setStartPlaceVal(this,event)">青岛怡升昌供应链库</div>
+									<div class="sContentList ell poi" sid="2583" onclick="setStartPlaceVal(this,event)">宝金库</div>
+									<div class="sContentList ell poi" sid="2575" onclick="setStartPlaceVal(this,event)">青岛怡升昌供应链库</div>
+									<div class="sContentList ell poi" sid="2583" onclick="setStartPlaceVal(this,event)">宝金库</div>
+									<div class="sContentList ell poi" sid="2575" onclick="setStartPlaceVal(this,event)">青岛怡升昌供应链库</div>
+								</div>
+							</span>
+							<span class="dib tc w18">&nbsp;</span>
+							<span class="dib procInput w150 vm bgfc"><input type="text" class="inputnoline lh26 pct70" id="minWeight" name="resource.minWeight" placeholder="运输重量"><span class="dib g8 tc">吨</span></span>
+							<span class="dib tc w18">—</span>
+							<span class="dib procInput w150 vm bgfc"><input type="text" class="inputnoline lh26 pct70" id="minWeight" name="resource.minWeight" placeholder="运输重量"><span class="dib g8 tc">吨</span></span>
+							<span class="dib tc w18">&nbsp;</span>
+							<input type="text" class="procInput w150 vm bgfc" placeholder="货物名称" autocomplete="off">
+							
+						</div>
+						<div class="r mt-3">
+							<a href="javascript:void(0)" class="searchBut dib mr30 f14">搜索</a>
+							<a href="javascript:void(0)" class="dib g8 f14">清空</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> <!-- procbg end -->
+	<!-- 信息列表 start-->
+	<div class="w1180 auto">
+		<div class="tableTitle">
+			<div class="l pct18 indent20">承运商</div>
+            <div class="l pct12">始发仓</div>
+            <div class="l pct5">&nbsp;</div>
+            <div class="l pct14">目的地</div>            
+            <div class="l pct6 tc">运货方式</div>
+            <div class="l pct12 tc">货物名称</div>
+            <div class="l pct9 tc">重量(吨)</div>
+            <div class="l pct14 tc">价格(元/吨)</div>
+            <div class="l pct10 tc">操作</div>			
+		</div>
+		<div class="tableList">
+			<div class="l pct18 ell indent20">奔驰大G运输集团</div>
+            <div class="l pct12 ell"><i class="dib logistDot1 mr5 vm"></i>德清升华码头</div>
+            <div class="l pct5 tl"><i class="dib h_icon  logistArrow2"></i></div>
+            <div class="l pct14  ell"><i class="dib logistDot2 mr5 vm"></i>江苏南京市市辖区</div>
+            <div class="l pct6 ell tc">整车</div>
+            <div class="l pct12 ell tc">冷轧卷板</div>            
+            <div class="l pct9 ell tc">2726.044</div>
+            <div class="l pct14 ell red tc">¥<span class="f18">5813</span></div>
+            <div class="l pct10 tc"><a href="javascript:void(0)" class="negBtn">去运输</a></div>				
+		</div><!-- list end -->
+		<div class="tableList">
+			<div class="l pct18 ell indent20">奔驰大G运输集团</div>
+            <div class="l pct12 ell"><i class="dib logistDot1 mr5 vm"></i>无锡市恒昌仓库</div>
+            <div class="l pct5 tl"><i class="dib h_icon  logistArrow2"></i></div>
+            <div class="l pct14  ell"><i class="dib logistDot2 mr5 vm"></i>江苏南京市市辖区</div>
+            <div class="l pct6 ell tc">整车</div>
+            <div class="l pct12 ell tc">冷轧卷板</div>            
+            <div class="l pct9 ell tc">2726.044</div>
+            <div class="l pct14 ell red tc">¥<span class="f18">5813</span></div>
+            <div class="l pct10 tc"><a href="javascript:void(0)" class="negBtn">去运输</a></div>				
+		</div><!-- list end -->
+
+		<!-- pagelist -->
+		<script src="../js/showpage.js"></script>
+
+			<!-- 空白页 blank -->
+			<div class="tableCont cl gADA tc pt50 pb50">
+				<img src="http://resource.lgsteel.cn/mainSite19/images/mall/Pic-chilun.png"><br>
+				暂时没有您想要的资源
+				<div class="tc mt30 mb50"><a href="javascript:void(0)" class="mallButSend dib">快捷发布物流需求</a></div>
+				<div class="cl blankgline mb50"></div>
+			</div>
+			<!--空白页  blank -->
+
+	</div>
+
+
+
+
+
+	<div id="logistPubCont" class="dn">
+		<div class="logistPubCTitle wh f18 ovh"><div class="pl25 pr25 ovh"><span class="l">快捷发布物流需求</span><span class="r"><a class="dib h_icon procPubCTClose mt42 trans" title="关闭" href="javascript:void(0)"></a></span></div></div>
+
+
+		<div class="pt30 pr30 pl30 pb30 ">
+			<div class="pct50 l mb10 rel">
+				&emsp;始发地：<input type="text" value="" class="orderInput w210 procInputDot lgProcInput">
+				<div class="sContentN">
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+				</div>
+			</div>
+			<div class="pct50 l mb10 tr">
+				&emsp;重量(吨)：<input type="text" value="" class="orderInput w210">
+			</div>
+			<div class="pct50 l mb10 rel">
+				&emsp;目的地：<input type="text" value="" class="orderInput w210 procInputDot lgProcInput">
+				<div class="sContentN">
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+					<a class="sContentListN ell poi" sid="2584" onclick="setStartPlaceVal1(this,event)">实邦门市</a>
+				</div>
+			</div>
+			<div class="pct50 l mb10 tr">
+				&emsp;&emsp;货物：<input type="text" value="" class="orderInput w210" placeholder="例：热轧卷板">
+			</div>
+		</div>
+		<div class="cl">&nbsp;</div>
+		<div class="tc"><a href="javascript:void(0)" class="f426 logistPubBut dib lh40 ">发布需求</a></div>
+	</div>
+
+	<script type="text/javascript" src="../js/scroll.js"></script> <!-- 右侧滚动条 -->
+	<script src="../js/footer.js"></script>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		$(function(){
+			//顶部反白(放于内页公共文件)
+			$(window).scroll(function(){
+				var s=$(window).scrollTop();
+				if(s>115){
+					$(".innerPage").addClass("fixed");
+				}else{
+					$(".innerPage").removeClass("fixed");
+				}
+			})
+
+
+			//用于选中菜单
+			$("#nav").find("a").removeClass("on");  
+			$("#nav").find("a").eq(6).addClass("on");
+
+			//用于搜索
+			$(".logicInput").on("click",function(e){
+				var _this=this
+				stopPro(e);
+				getPosition(_this,150);
+				$(window).resize(function(){
+					getPosition(_this,150);
+				})
+				var searchCont = $(_this).next(".sContent");
+				if(searchCont.css("display")=="none"){
+					$(".sContent").hide();
+					searchCont.show();
+				}else{
+					searchCont.hide();
+				} 
+			})
+
+
+			//用于弹出框搜索
+			$(".lgProcInput").on("click",function(e){
+				var _this=this
+				stopPro(e);
+				getPositionlog(_this,500);
+				$(window).resize(function(){
+					getPositionlog(_this,500);
+				})
+				var searchCont = $(_this).next(".sContentN");
+				if(searchCont.css("display")=="none"){
+					$(".sContentN").hide();
+					searchCont.show();
+				}else{
+					searchCont.hide();
+				} 
+			})
+
+
+
+			//用于滚动条 (动态获取数据采用与商场一样的方式获取这个方式只是用于静态展示见mallIndexUtil.js)
+	       $(window).load(function(){
+			    $(".sContent").mCustomScrollbar({
+				    theme:"minimal-dark"
+				});	
+				$(".sContentN").mCustomScrollbar({
+				    theme:"minimal-dark"
+				});				 			 
+		    }); 
+
+	       $("body").on("click",function(){
+				$('.sContent').hide();
+				$('.sContentN').hide();
+			})
+
+		})
+
+
+		function setItemJl(obj){
+			$(obj).siblings().removeClass("on");
+			$(obj).addClass("on")
+		}
+
+
+		function getPosition(obj,str){
+			if(str==undefined){
+				$(obj).next(".sContent").css({"width":$(obj).outerWidth()});		
+			}else{
+				$(obj).next(".sContent").css({"width":str});
+			}
+			$(obj).next(".sContent").css({"left":$(obj).offset().left-25,"top":$(obj).offset().top+$(obj).outerHeight()+1});			
+		}
+
+		//搜索定位
+		function getPositionlog(obj,str){
+			var w=$(window).width()/2;
+			var mw=$(obj).offset().left
+							
+			if(str==undefined){
+				$(obj).next(".sContentN").css({"width":$(obj).outerWidth()});		
+			}else{
+				$(obj).next(".sContentN").css({"width":str});
+			}
+			if(mw<w){
+				$(obj).next(".sContentN").css({"left":"70px","top":$(obj).outerHeight()});	
+			}else{
+				$(obj).next(".sContentN").css({"right":"0px","top":$(obj).outerHeight()});	
+			}
+					
+		}
+
+
+		//阻止冒泡
+		function stopPro(e){
+			if(navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.match(/7./i)=="7."|| navigator.appVersion.match(/8./i)=="8.")) 
+			{ 
+				
+				if (event.stopPropagation) { 
+				// this code is for Mozilla and Opera 
+				event.stopPropagation(); 
+				} 
+				else if (window.event) { 
+				// this code is for IE 
+				window.event.cancelBubble = true; 
+				}
+			}else{
+				e.stopPropagation();
+		 }
+		}
+
+		function logistPub(){
+			var mypage=layer.open({
+				  type: 1,
+				  title: false,
+				  closeBtn: 0,
+				  shadeClose: true,				  
+				  shade: 0.4,
+				  area: ['650px', '322px'],
+				  content: $("#logistPubCont")
+			})
+
+			$(".procPubCTClose").on("click",function(){
+				layer.close(mypage)
+			})
+		}
+
+		function setStartPlaceVal1(obj){
+			$(obj).parents(".sContentN").prev(".lgProcInput").val($(obj).text());
+			$(obj).parents(".sContentN").hide()
+		}
+
+	</script>
+</body>
+</html>

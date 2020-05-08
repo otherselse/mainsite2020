@@ -1,0 +1,150 @@
+.goldIcon{background:url(../images/gold/goldIcon.png);}
+
+.goldTitle{font-size: 36px;color:#F6E5C5;margin-top: 72px;margin-bottom:4px;}
+.mb60{margin-bottom: 60px}
+.goldService{width: 580px;height: 313px;background:url(../images/gold/Bg-moshi01.png) #bac7e5;}
+.fF6E{color:#F6E5C5;}
+.mr70{margin-right: 70px}
+.goldData{margin-top: 86px;}
+.goldfh{width: 580px;height: 313px;background:url(../images/gold/Bg-moshi02.png) #eed8b9;}
+.goldBar{background: #FCFCFC;border: 1px solid #E5E5E5;height:48px;line-height: 48px}
+.golden-list{margin:0 10px 20px 10px;float:left;width: 378px;height:138px;background: #FFFFFF;border: 1px solid #F4F4F4;}
+.golden-list:hover{box-shadow: 0 10px 12px -4px rgba(0,0,0,0.08);}
+:root .golden-list:nth-of-type(3n) {margin-right: 0;}
+:root .golden-list{margin:0px 20px 20px 0;}
+.f1f2{color: #1F2E4F;}
+.f744{color: #74471A;}
+.goldMS01{width: 520px;height: 141px;background:url(../images/gold/Bg-moshi-inside.png);margin-top:14px;}
+.goldMS02{width: 520px;height: 141px;background-color:#fff;margin-top:14px;}
+.goldMS02bluebg{width: 91px;height: 48px;background: #347DF2;box-shadow: 0 10px 15px 0 rgba(52,125,242,0.30);right:0;top:-10px;}
+.goldMsLine{background:url(../images/gold/pic-longline.png) center  no-repeat;}
+.w243{width: 243px;}
+.goldGYLtitle{font-size: 24px;margin-top:106px;}
+.goldGYLCont{width: 760px;height:300px;margin-top: 97px}
+.goldGYLDetail{width:25%;float:left;transform: translateY(0);transform: -webkit-translateY(0);transform: -moz-translateY(0);}
+.goldGYLIBg{width: 80px;height: 80px;background-color: #fff;border-radius: 100%;-webkit-box-shadow: 0 15px 30px 0 rgba(0,0,0,0.05);-moz-box-shadow: 0 15px 30px 0 rgba(0,0,0,0.05);-o-box-shadow: 0 15px 30px 0 rgba(0,0,0,0.05);-ms-box-shadow: 0 15px 30px 0 rgba(0,0,0,0.05);}
+.goldGYLTitle{font-size: 18px;font-weight: bold;margin:27px 0 10px 0;;}
+.goldGYLI1{width: 80px;height: 80px;border-radius: 100%;background-position: -3px -8px;}
+.goldGYLI2{width: 80px;height: 80px;border-radius: 100%;background-position: -110px -10px;}
+.goldGYLI3{width: 80px;height: 80px;border-radius: 100%;background-position: -210px -8px;}
+.goldGYLI4{width: 80px;height: 80px;border-radius: 100%;background-position: -310px -8px;}
+
+.goldGYLButCont{padding-top:21px;display: none}
+.goldGYLDetail:hover{background:url(../images/gold/Bg-Hover.png) center no-repeat;transform: translateY(-18%);transform: -webkit-translateY(-18%);transform: -moz-translateY(-18%);color:#E4D1AC;height:300px;}
+.goldGYLDetail:hover > .goldGYLIBg{background: transparent;border:1px #E4D1AC solid;border-radius: 100%;margin-top:30px;}
+.goldGYLDetail:hover  .goldGYLI1{background-position: -3px -108px;}
+.goldGYLDetail:hover .g6{color:#E4D1AC;}
+.goldGYLDetail:hover .goldGYLTitle{margin:12px 0 8px 0;}
+.goldGYLDetail:hover .goldGYLButCont{display: block}
+.goldGYLBut{width:118px;height:34px;line-height:34px;border: 1px solid #FFF2D7;border-radius: 3px;font-size: 16px;color: #74471A;}
+.goldGYLDetail:hover  .goldGYLI2{background-position: -110px -110px}
+.goldGYLDetail:hover  .goldGYLI3{background-position: -210px -108px}
+.goldGYLDetail:hover  .goldGYLI4{background-position: -310px -108px}
+
+.goldChampT{padding:32px 0 28px 0;}
+.goldChampTitle{width: 240px;height: 82px;background:url(../images/gold/Title.png);}
+.champion-box{margin:0 auto;width:1110px;height: 250px;overflow: hidden}
+.slide-list{width: 535px;margin:0 10px;float:left;height:250px;background: #fff;}
+.goldChamp > .prev{width: 28px;height:40px;background-position: -411px -34px;top:60%;left:10px;}
+.goldChamp > .next{width: 28px;height:40px;background-position: -463px -35px;top:60%;right:10px;}
+.goldChamp > .prev:hover{background-position: -411px -127px;}
+.goldChamp > .next:hover{background-position: -463px -127px;}
+.goldChapImg{width: 158px;height:210px;border: 1px solid #E4D1AC;}
+.goldChMain{line-height: 20px;height: 40px;padding:10px 0 0;border-top:1px #E6E6E6 solid;color: #808080;margin:10px 0;}
+.goldChampDetail{float:left;width:315px;}
+.goldChampSum{border-top:1px #E6E6E6 solid;padding-top:15px;}
+.goldCompIcon{width: 38px;height:32px;background-position: -31px -232px;}
+.goldCompCup{right:0;top:20px;}
+.goldCompCupTitle{color:#B07B4B ;padding:2px 8px;background-image: -webkit-linear-gradient(90deg, #FDF6E7 0%, #FAEACB 100%);-moz-background-image: linear-gradient(90deg, #FDF6E7 0%, #FAEACB 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDF6E7', endColorstr='#FAEACB',GradientType=1 );background-image: linear-gradient(90deg, #FDF6E7 0%, #FAEACB 100%);}
+.goldBarLeft{float:left;}
+.goldBarRight{float:right;background:#fff;border-right: 1px solid #E5E5E5;padding:0 10px;border-left: 1px solid #E5E5E5;}
+.goldBarRightTxt{line-height: 47px;height: 47px;border:0;outline:none;padding:0;margin:0 10px;width: 230px;}
+.goldBarRightBut{background: #1365E8;border-radius: 3px;width: 98px;height: 32px;line-height: 32px;color:#fff}
+.goldBarRightBut:hover{background:#1153BC;}
+.avatar-box-img{width: 92px;height:118px;float:left;border: 1px solid #E4D1AC;}
+.goldListMain{line-height: 20px;height: 40px;padding:10px 0 0;color: #808080;margin:10px 0;}
+.goldRuleTitle{font-size: 24px;color: #E4D1AC;margin:60px 0 53px;}
+.goldRuleIcon1{width: 70px;height: 70px;background-position:-114px -217px;}
+.goldRuleIcon2{width: 70px;height: 70px;background-position:-214px -217px;}
+.goldRuleIcon3{width: 70px;height: 70px;background-position:-314px -217px;}
+.goldRuleIcon4{width: 70px;height: 70px;background-position:-416px -217px;}
+
+.goldRuleArrow{width: 71px;height: 9px;background-position:-16px -348px;margin:0 20px;}
+.goldRuleBut{font-size: 18px;color: #74471A;border: 1px solid #FFF2D7;border-radius: 3px;width: 218px;height: 50px;line-height: 50px}
+.fixGold{height: 115px;min-width: 1180px;position: fixed;bottom: 0;background: url(../images/gold/BgFlo-Regi.png) center bottom repeat-x;width: 100%;z-index: 9}
+.fixGoldTitle{height:45px;display: inline-block;background: #343E67;border-radius: 5px 5px 0 0;line-height: 45px;padding:0 20px;font-size: 20px;color: #E4D1AC;}
+.fgoldRuleIcon1{width: 42px;height: 42px;background-position:-129px -329px;}
+.fgoldRuleIcon2{width: 42px;height: 42px;background-position:-229px -329px;}
+.fgoldRuleIcon3{width: 42px;height: 42px;background-position:-329px -329px;}
+.fgoldRuleIcon4{width: 42px;height: 42px;background-position:-429px -329px;}
+.fjoinBut{border: 1px solid #FFF2D7;border-radius: 3px;width: 160px;height: 40px;line-height: 40px;font-size: 16px;color: #74471A;}
+.fgoldRuleArrow{width: 71px;height: 9px;background-position:-16px -348px;margin:0 10px;}
+.pt12{padding-top: 12px}
+.h28{height: 28px}
+.goldGradient{background-image: -webkit-linear-gradient(269deg, #EFE3C5 0%, #D6BB8E 100%);-moz-background-image: linear-gradient(269deg, #EFE3C5 0%, #D6BB8E 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFE3C5', endColorstr='#D6BB8E',GradientType=1 );background-image: linear-gradient(269deg, #EFE3C5 0%, #D6BB8E 100%);}
+.goldGradient:hover{background-image:-webkit-linear-gradient(to right,#C7A771, #E4D2A8);background-image:-moz-linear-gradient(to right,#C7A771, #E4D2A8);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C7A771', endColorstr='#E4D2A8',GradientType=1 );background-image:linear-gradient(to right,#C7A771, #E4D2A8);}
+
+
+.detailLeft{width: 320px;float:left;}
+.detailRight{width:840px;float:right}
+.detailavatar{border: 1px solid #F4F4F4;position: relative;margin-top:-65px;background: #fff;}
+.detailImg{border: 1px solid #E4D1AC;width: 92px;height: 118px;}
+.detailTop{border-bottom:1px solid #F4F4F4;padding-bottom: 10px}
+
+
+.goldBarRight input::-webkit-input-placeholder, .goldfh input::-webkit-input-placeholder, .orderSearchRight input::-webkit-input-placeholder {color: #ADADAD;}
+.goldBarRight input::-moz-input-placeholder,.goldfh input::-moz-input-placeholder,.orderSearchRight input::-moz-input-placeholder {color: #ADADAD;;}
+.goldBarRight input::-ms-input-placeholder,.goldfh input::-ms-input-placeholder,.orderSearchRight input::-ms-input-placeholder {color: #ADADAD;;}
+
+.detailCont{background:url(../images/gold/icon02-Xunz-L.png) no-repeat center;}
+.detailCampion{width: 28px;height: 33px;background-position: -37px -432px;right:0px;top:0px;}
+.detailTime{width: 16px;height:15px;background-position: -143px -440px;}
+.goldBlockIcon{width: 30px;height: 4px;background-color: #D0BB9B }
+.newContent{border-left:1px solid #F4F4F4;border-right:1px solid #F4F4F4;}
+.newlist{line-height: 49px;border-bottom: 1px solid #F4F4F4;height: 49px;}
+.orderSearch{border: 1px solid #E8D9C3;height: 48px;line-height: 48px;background: #FAF5EE;}
+.orderSearchRight{background-color: #fff;width: 300px;border-left:1px solid #E8D9C3;}
+.w170{width: 170px}
+.lh55{line-height: 55px;height:55px;}
+.goldChapdiv{background: url(../images/gold/goldimgBgb.jpg);width: 158px;height: 210px;float:left;}
+.avatar-box-imgbg{width: 92px;height: 118px;float: left;background: url(../images/gold/goldimgbgS.jpg);}
+
+
+
+
+
+
+
+.goldbg{height:600px;width: 100%;min-width: 1180px;margin-left:auto;margin-right:auto;}
+.goldpart2{height:400px;width: 100%;min-width: 1180px;margin-left:auto;margin-right:auto; }
+.goldRule{height:365px;width: 100%;min-width: 1180px;margin-left:auto;margin-right:auto;}
+.goldDetailbg{height:200px;width: 100%;min-width: 1180px;margin-left:auto;margin-right:auto;}
+.goldChamp{margin-top:50px;margin-bottom:20px;height: 432px; }
+
+
+/*phone*/
+@media only screen and (max-width: 1080px) {
+	.goldbg{background: url('../images/gold/m/goldBg.jpg') top center no-repeat #49537e;background-size:100% 100%;}
+	.goldpart2{background: #f9f9f9;background-size:100% 100%;}
+	.goldRule{background: url('../images/gold/m/Bg-Regi.jpg') top center no-repeat #343c67;background-size:100% 100%;}
+	.goldDetailbg{background: url('../images/gold/m/Bg-Bussi.jpg') top center no-repeat #363f6a;background-size:100% 100%;}
+	.goldChamp{background: url(../images/gold/m/Bg-Champain.jpg) #646f9f; }
+}
+/*pc*/
+@media only screen and (max-width: 1920px) and (min-width: 1081px) {
+	.goldbg{background:url(../images/gold/goldBg.jpg)  top center no-repeat;}
+	.goldpart2{background: url('../images/gold/Bg-Chain.png') top center no-repeat;}
+	.goldRule{background: url('../images/gold/Bg-Regi.png') top center no-repeat;}
+	.goldDetailbg{background: url('../images/gold/Bg-Bussi.png') top center no-repeat;}
+	.goldChamp{background: url(../images/gold/Bg-Champain.png) #646f9f; }
+}
+
+/*pc > 1920*/
+@media only screen  and (min-width: 1921px) {
+	.goldbg{width: 100%;background:url(../images/gold/goldBg.jpg)  top center no-repeat;background-size:100%}
+	.goldpart2{background: url('../images/gold/Bg-Chain.png') top center no-repeat;background-size:100%}
+	.goldRule{background: url('../images/gold/Bg-Regi.png') top center no-repeat;background-size:100%}
+	.goldDetailbg{background: url('../images/gold/Bg-Bussi.png') top center no-repeat;background-size:100%}
+	.goldChamp{background: url(../images/gold/Bg-Champain.png) #646f9f;background-size:100% }
+}
+

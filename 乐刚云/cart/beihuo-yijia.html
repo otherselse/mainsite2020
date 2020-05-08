@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>购物车_集聚行业精英_发展产业互联</title>
+	<meta content="乐刚网是“国内首创的”集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品(如热轧、冷轧、中厚板、彩涂、管材等钢材类产品)综合性电商服务平台。" name="description">
+	<meta content="乐刚网是“国内首创的”集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品(如热轧、冷轧、中厚板、彩涂、管材等钢材类产品)综合性电商服务平台。" name="keywords">
+	<link rel="icon" href="http://resource.lgsteel.cn/public/images/favicon.ico" mce_href="http://resource.lgsteel.cn/public/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/style/lib.css">
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lg19laydate.css">
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908.css">
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/layer/3.1.1/layer.js"></script>
+
+
+</head>
+<body class="cartbg">
+	<script type="text/javascript" src="../js/cartheader.js"></script>
+	<div class="w1180 auto mt150">
+		<div class="cl"><span class="pmenuLink on dib lh50 h50">订单明细</span></div>
+		<div class="cart-order-details">
+			<div class="details-title ovh">
+                <div class="l tc pct8">序号</div>
+                <div class="l pct20">品名-牌号</div>
+                <div class="l pct10">钢厂</div>
+                <div class="l tc pct15">计量方式</div>
+				<div class="l pct12">规格</div>                
+                <div class="l tc pct10">数量</div>
+                <div class="l pct15 indent4">重量</div>
+                <div class="l  pct10">价格(元)</div>
+            </div>
+            <div class="details-list ovh">
+            	<div class="l tc pct8 gADA">01</div>
+                <div class="l pct20 ell">冷轧卷板-HJAD234</div>
+                <div class="l pct10 ell">鞍钢</div>
+                <div class="l tc pct15 ell">抄码</div>
+				<div class="l pct12 ell">1.550*1520*C</div>                
+                <div class="l tc pct10 ell">2</div>
+                <div class="l pct15 indent4 ell">1.230吨</div>
+                <div class="l  pct10 ell">￥1200</div>
+            </div>
+            <div class="details-list ovh">
+            	<div class="l tc pct8 gADA">02</div>
+                <div class="l pct20 ell">冷轧卷板-HJAD234</div>
+                <div class="l pct10 ell">鞍钢</div>
+                <div class="l tc pct15 ell">抄码</div>
+				<div class="l pct12 ell">1.550*1520*C</div>                
+                <div class="l tc pct10 ell">2</div>
+                <div class="l pct15 indent4 ell">1.230吨</div>
+                <div class="l  pct10 ell">￥1200</div>
+            </div>
+             <div class="details-foot ovh tr pr40">
+             	共<span class="red">3</span>条，总重量：<span class="red">23.000</span>吨&emsp;&emsp;&emsp;合计金额：<span class="red f18">￥105000.00</span>
+             </div>			
+		</div><!-- 订单明细 end -->
+		<div class="mt40 bgwh">
+			<div class="pt25 pr25 pl25 pr25">
+				<div class="f18 lh18"><i class="dib greenDot vtb  mr10"></i><span class="dib vm">订单信息</span></div>
+				<div class="mt10  mb25 ovh lh30 cart-infobg">
+					<div class="l pct50 ell mb10"><span class="dib g8">&emsp;联系人：</span>钢铁侠</div>
+					<div class="l pct50 ell mb10"><span class="dib g8">&emsp;&emsp;电话：</span>18456642356</div>
+					<div class="l pct50 ell mb10"><span class="dib g8">提货方式：</span>
+						<span class="dib selectSwitch">
+						<!-- <input type="hidden" name="carryType" value=""> -->
+							<a class="dib active switchOption" id="tihuo" href="javascript:void(0)">提货</a>
+							<a class="dib switchOption" id="zhhq" href="javascript:void(0)">转货权</a>
+						</span>
+					</div>
+					<div class="l pct50 ell mb10"><span class="dib g8">&emsp;&emsp;传真：</span>021-45634668</div>
+					<div class="l pct50 ell "><span class="dib g8">付款方式：</span>电汇</div>
+					<div class="l pct50 ell "><span class="dib g8">费用说明：</span>需方自理</div>
+				</div>
+				
+
+				
+
+				<!-- 公司信息start -->
+				<div id="custInfoDt">
+					<div class=" ovh">
+						<div class="l f18 lh18"><i class="dib greenDot vtb  mr10"></i><span class="dib vm">公司信息</span></div>
+						<div class="r">
+							<a href="javascript:void(0)" class="g8 orderEditBut" id="editCorpBtn" onclick="editEnterpriseInfo($(this))"><i class="dib h_icon orderEdit vm mr5"></i>修改</a>
+							<span class="orderSaveBut" id="saveCorpInfoBtn"><a href="javascript:void(0)" class="orderSave mr10" onclick="editCorpInfo($(this))">保存</a><a href="javascript:void(0)" class="orderCancel"  onclick="cancelEdit($(this))">取消</a></span>
+							<span class="tipAlarm dn red ml10"></span>
+						</div>
+					</div>
+					<div class="mt10  mb25 ovh lh30 cart-infobg">
+						<div class="l pct50 ell mb10"><span class="dib g8">公司名称：</span>钢铁侠</div>
+						<div class="l pct50 ell mb10"><span class="dib g8 tr">&emsp;税号：</span>98563214450</div>
+						<div class="l pct50 ell mb10"><span class="dib g8">注册地址：</span>江苏无锡市宜兴市远大集团666号</div>
+						<div class="l pct50 ell mb10"><span class="dib g8 tr">联系人：</span>钢铁侠</div>
+						<div class="l pct50 ell mb10"><span class="dib g8">开户银行：</span>						
+							<span class="infoText">招商银行</span>
+							<span class="infoInput pct70"><input type="text" value="招商银行" class="orderInput pct100" /></span>
+						</div>
+						<div class="l pct50 ell mb10"><span class="dib g8 tr">&emsp;电话：</span>
+							<span class="infoText">525081063920</span>
+							<span class="infoInput pct70"><input type="text" value="525081063920" class="orderInput pct100" /></span>
+						</div>
+						<div class="l pct50 ell  cl"><span class="dib g8">银行账号：</span>
+							<span class="infoText">555555555555021</span>
+							<span class="infoInput pct70"><input type="text" value="555555555555021" class="orderInput pct100" /></span>
+						</div>
+						<div class="l pct50 ell "><span class="dib g8 tr">&emsp;传真：</span>					
+							<span class="infoText">021-45563334</span>
+							<span class="infoInput pct70"><input type="text" value="021-45563334" class="orderInput pct100" /></span>
+						</div>
+					</div>
+				</div><!-- 公司信息end -->
+
+				<!-- 开票信息 -->
+				<div id="voiceDiv">
+					<div class="cl ovh">
+						<div class="l f18 lh18"><i class="dib greenDot vtb  mr10"></i><span class="dib vm">开票信息</span></div>
+						<div class="r"><a href="javascript:void(0)" class="g8 orderEditBut" id="editCorpBtn" onclick="openKp()"><i class="dib h_icon orderEdit vm mr5"></i>新增</a></div>
+					</div>					
+					<div class="mt10 cart-infobg mb25 ovh invoiceInfo">
+						<div class=" mb10 receipt-bottom-item poi ">
+							<div class="l pct40 pl30 ell"><i class="h_icon dib orderSelIcon vm mr10"></i><span class="g28">阿波罗信息科技有限公司</span></div>
+							<div class="l pct20  ell">税号：47669640488338320</div>
+							<div class="r pct15">
+								<span class="g8 orderDefault dn mr10">默认地址</span>
+								<a href="javascript:void(0)" class="g8 orderMRBut dn mr15">设为默认</a>
+								<a href="javascript:void(0)" class="g8 orderDel dn">删除</a>
+							</div>
+						</div>
+						<div class=" mb10 receipt-bottom-item poi default">
+							<div class="l pct40 pl30 ell"><i class="h_icon dib orderSelIcon vm mr10"></i><span class="g28">上海华冶钢材加工有限公司</span></div>
+							<div class="l pct20  ell">税号：47669640488338320</div>
+							<div class="r pct15">
+								<span class="g8 orderDefault dn mr10">默认地址</span>
+								<a href="javascript:void(0)" class="g8 orderMRBut dn mr15">设为默认</a>
+								<a href="javascript:void(0)" class="g8 orderDel dn">删除</a>
+							</div>
+						</div>
+						<div class=" receipt-bottom-item">
+							<div class="l pct15 pl30"><a href="javascript:void(0)" onclick="addAdress()" class="blue"><i class="h_icon dib orderAddIcon vm mr10"></i><span class="dib">新增</span></a></div>
+						</div>
+					</div>
+				</div><!-- 开票信息 -->
+
+				
+
+				<div class=" mt50 pb50 auto tc">
+					<a class="dib cart-submit tc" href="javascript:void(0)"><i class="dib h_icon orderContIcon vm mr5"></i>生成合同</a><br/>
+					<a href="##" class="blue dib mt15">查看订单</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/footer.js"></script>
+
+	<script type="text/javascript" src="../js/laydate.js"></script>
+	<script>
+		$(function(){
+			//设置为默认
+			$("body").on("click",".orderMRBut",function(e){
+				e.stopPropagation()
+				var myobj=$(this).parents(".receipt-bottom-item");
+				myobj.parents("#shxx").find(".receipt-bottom-item").siblings().removeClass('default');
+				myobj.addClass('default')
+			})
+
+			//关闭提示
+			$(".cartCloseIcon").on("click",function(){
+				$(this).parents(".hover_ck").hide();
+			})
+
+			//？的提示hover
+			$(".icon-tips").hover(function(){
+				$(this).find(".hover_ck").css({"top":30,"left":-15})
+				$(this).find(".hover_ck").show();
+			},function(){
+				$(this).find(".hover_ck").hide();
+			})
+
+			//选择开票单位/地址
+			$("body").on("click",".receipt-bottom-item",function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			})
+
+			$(".switchOption").on("click",function(){
+				$(this).siblings(".switchOption").removeClass("active");
+				$(this).addClass("active");
+			})
+
+		})
+
+		function maxjhrq(){
+			 if($("#conType").val()==131006||$("#conType").val()==131009){
+		       var date=new Date();
+		       var maxjhrq=AddDays(date, 20);
+		       laydate({min:laydate.now(),max:maxjhrq,istime: false,format:'YYYY-MM-DD'});
+			 }else{
+		       laydate({min:laydate.now(),istime: false,format:'YYYY-MM-DD'});
+			 }
+		}
+
+		function thfs(obj){
+			clickSingle(obj);
+
+			$(obj).parents(".required").find(".tipAlarmywlx").hide();
+	        var outType=$(obj).attr("sid");
+	        $("#outType").val(outType);
+	        $("#jhdz").val("");
+	        var detailAddr="4";
+	        if(outType=='3001'){//自提
+	            $("#jhdz").val("货物所在仓库");
+
+	            $("#shxx").hide();
+
+	        } else{
+	            $("#shxx").show();
+	        }
+
+		}
+
+		function clickSingle(obj){
+			$(obj).parent(".selectSingle").find(".orderOption").removeClass("active");
+			$(obj).addClass("active");
+		}
+
+		function addAdress() {
+	        layer.open({
+	            type: 2,
+	            title: '新增收货地址',
+	            area: ['742px', "315px"],
+	            shade: 0.4,
+	            shadeClose: true,
+	            content: 'selectAddressInfo.html'
+	        })
+	    }
+
+
+
+		function editEnterpriseInfo(){
+			$("#custInfoDt").addClass("edit");
+		}
+
+		function editCorpInfo(){
+			cancelEdit()
+		}
+
+		function cancelEdit(){
+			$("#custInfoDt").removeClass("edit")
+		}
+
+		function openKp(){
+	        layer.open({
+	            type: 2,
+	            title: '编辑开票信息',
+	            shadeClose: true, //开启点击遮罩关闭层
+	            shade: 0.4,
+	            area: ['742px', "315px"],
+	            content: 'selectVoiceInfoNew.html'
+	        });
+	    }
+
+	    function selectGolden1(){
+	    	layer.open({
+	            type: 2,
+	            title: '选择金牌商家',
+	            shadeClose: true, //开启点击遮罩关闭层
+	            shade: 0.4,
+	            area: ['716px', "80%"],
+	            content: 'selectGolden.html'
+	        });
+	    }
+	</script>
+</body>
+</html>

@@ -237,7 +237,84 @@
 	            <div class="l pct10 tc"><a href="javascript:void(0)" class="openBtn"><span class="dib openBtnTxt">展开</span><i class="dib h_icon openBtnIcon ml5"></i></a></div>
 	        </div>
             <div class="cl subTable">
-            	
+            	<div class="tableTitle">
+					<div class="l pct20 indent20">
+						<label class="dib iconcheckbox poi vm mr5 rel ml-1">
+							<input type="checkbox" class="opacity-checkbox abs poi" onclick="chooseAll(this)">
+						</label>全选/牌号
+					</div>
+					<div class="l pct15 ">规格</div>
+					<div class="l pct20 tc">数量</div>
+					<div class="l pct15 tc">重量(吨)</div>            
+					<div class="l pct20 tc">价格(元/吨)</div>
+					<div class="l pct10 tc pct10ie7">操作</div>
+				</div>
+				<div class="subTableCont ">
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" >
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+				</div>
+				<div class="subTableFooter ovh mallboxshadow">
+					<div class="l pct10 indent20">
+						<label class="dib iconcheckbox poi vm mr5 rel">
+						<input type="checkbox" class="opacity-checkbox abs poi" onclick="chooseAll(this)">
+						</label>全选/牌号
+					</div>
+					<div class="l pct20 indent20">
+						<label id="cagl" class="dib iconcheckbox poi vm mr5 rel">
+						<input id="cagi" type="checkbox" class="opacity-checkbox abs poi" onclick="chooseAllGroup(this)">
+						</label>展示并勾选所有明细
+					</div>
+					<div class="r">
+						已选数量：<b id="checkedQuantity">0.000</b>，
+						已选重量：<b id="checkedWeight">0.000</b>吨&emsp;&emsp;
+						合计：¥<span id="checkedPrice" class="dib red f18">0.00</span>元&emsp;
+						<span class="dib spsmallsetHover">
+							<a href="javascript:void(0)" onclick="addCarts(this)" class="subTableplBut dib">批量下单</a>
+							 <span class="hover_ck tl f12">
+						         <i class="dib abs hover_ckdot" style="right:30px"><i class="dib abs hover_ckdot2"></i></i>
+						        	 一键购买：价格不可议，销售合同一键生成
+						         
+						     </span>
+						</span>
+					</div>
+				</div>
+
             </div>
 		</div> <!-- tableCont 展开  end  -->
 		<div class="tableCont cl">
@@ -270,6 +347,241 @@
 	            </div>				
 			</div>
 		</div><!-- 一键购买 end -->
+		<div class="tableCont cl nextDom">
+			<div class="tableList">
+				<div class="l pct4 tr">
+					<span class="setClodyHover  tc poi mr10" onclick="gotoLocation()">
+						<i class="mall_clody dib vm"></i>
+						<div class="hover_cloudy tl ovh" >
+							<div class="l ell hover_clTxt pct85">上海北铭商城</div>
+							<div class="l pct15 tl"><i class="h_icon hover_clIcon dib vm mt17"></i></div>
+						</div>
+					</span>
+				</div>
+				<div class="l pct15  lh24"><div class="ell mt25" title="不锈钢异-TDC51DZTDC51DZ">不锈钢异-TDC51DZTDC51DZ</div><div class="gADA f12 ell">提货时间：2019-10-10</div></div>
+	            <div class="l pct10  ell">1.000*1250*2000</div>
+	            <div class="l pct9 tc ell">20</div>
+	            <div class="l pct9 ell">日照宝华</div>            
+	            <div class="l pct12 ell">
+	            	<span class="setHover poi">
+	            	<a href="javascript:void(0)" class="blue">上海-华冶A区2</a>
+	            	<span class="hover_ck ell">
+                		<i class="dib abs hover_ckdot"><i class="dib abs hover_ckdot2"></i></i>
+                		<span class="f18 dib mb10">空港库</span><br>
+                		<span class="dib lh20">仓库地址：天津市天津市东丽区天津空港物流加工区环河南路22天津市天津市东丽区天津空港物流加工区环河南路22天津市天津市东丽区天津空港物流加工区环河南路227号</span><br>
+                		<span class="dib lh20">联系电话：4008200666-5351</span>
+                	</span>
+               		</span>
+	            </div>
+	            <div class="l pct8 ell">1196.135</div>
+	            <div class="l pct9 ell red tc">¥<span class="f18">5813</span></div>
+	            <div class="l pct14 tc pt30 ovh">
+	            	<i class="h_smallPro dib vm mr5 l ml30"></i>
+	            	<div class="l lh18 tl">顾大侠<br/><span class="g8 f12 dib ell">18563556234</span></div>
+	            </div>
+	            <div class="l pct10 tc"><a href="javascript:void(0)" class="openBtn"><span class="dib openBtnTxt">展开</span><i class="dib h_icon openBtnIcon ml5"></i></a></div>
+	        </div>
+           <!--  <div class="cl subTable subTable1">
+            	
+            </div> -->
+            <div class="cl subTable">
+            	<div class="tableTitle">
+					<div class="l pct20 indent20">
+						<label class="dib iconcheckbox poi vm mr5 rel ml-1">
+							<input type="checkbox" class="opacity-checkbox abs poi" onclick="chooseAll(this)">
+						</label>全选/牌号
+					</div>
+					<div class="l pct15 ">规格</div>
+					<div class="l pct20 tc">数量</div>
+					<div class="l pct15 tc">重量(吨)</div>            
+					<div class="l pct20 tc">价格(元/吨)</div>
+					<div class="l pct10 tc pct10ie7">操作</div>
+				</div>
+				<div class="subTableCont ">
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					
+
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+					<div class="subTableList">
+						<div class="l pct20 indent20 ell">
+							<label class="dib iconcheckbox poi vm mr5 rel">
+								<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="chooseOne(this)" weight="6.125" price="6666" rid="3476831">
+							</label>
+							Q235B
+						</div>
+						<div class="l pct15 ell">1.900*1250*C</div>
+						<div class="l pct20 tc ell">1</div>
+						<div class="l pct15 tc ell">6.125</div>    
+						<div class="l pct20 tc red">¥6666</div>
+						<div class="l pct10 tc smallsetHover rel">
+							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
+							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
+					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
+					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					     	 </span>
+						</div>
+					</div>
+				</div>
+				<div class="subTableFooter ovh mallboxshadow">
+					<div class="l pct10 indent20">
+						<label class="dib iconcheckbox poi vm mr5 rel">
+						<input type="checkbox" class="opacity-checkbox abs poi" onclick="chooseAll(this)">
+						</label>全选/牌号
+					</div>
+					<div class="l pct20 indent20">
+						<label id="cagl" class="dib iconcheckbox poi vm mr5 rel">
+						<input id="cagi" type="checkbox" class="opacity-checkbox abs poi" onclick="chooseAllGroup(this)">
+						</label>展示并勾选所有明细
+					</div>
+					<div class="r">
+						已选数量：<b id="checkedQuantity">0.000</b>，
+						已选重量：<b id="checkedWeight">0.000</b>吨&emsp;&emsp;
+						合计：¥<span id="checkedPrice" class="dib red f18">0.00</span>元&emsp;
+						<span class="dib spsmallsetHover">
+							<a href="javascript:void(0)" onclick="addCarts(this)" class="subTableplBut dib">批量下单</a>
+							 <span class="hover_ck tl f12">
+						         <i class="dib abs hover_ckdot" style="right:30px"><i class="dib abs hover_ckdot2"></i></i>
+						        	 一键购买：价格不可议，销售合同一键生成
+						         
+						     </span>
+						</span>
+					</div>
+				</div>
+
+
+            </div>
+		</div> <!-- tableCont 展开  end  -->
 		<div class="tableCont cl">
 			<div class="tableList">
 				<div class="l pct4 tr">
@@ -326,8 +638,8 @@
 	<script src="http://resource.lgsteel.cn/public/js/fixScroll/myFixedScroll.js"></script> 
 
 	<script>
-		var opts={'pDom':'.w1180','distance':0,'nextDom':'.nextDom'}  //pDom为父节点，distance为距离,左侧菜单固定滚动
-		$(".tableTitle").eq(0).myscrollFunc(opts)
+		//var opts={'pDom':'.w1180','distance':0,'nextDom':'.nextDom'}  //pDom为父节点，distance为距离,左侧菜单固定滚动
+		//$(".tableTitle").eq(0).myscrollFunc(opts)
 
 		$(function(){
 
@@ -416,23 +728,33 @@
 
 			//展开的提示 20200108
 			$("body").on("mouseover",".smallsetHover",function(){
-
-				$(this).children(".hover_ck").css({"right":"30px","top":$(this).height()-10});
+				var l=$(this).parents(".subTableCont").find(".subTableList").length;
+				var _i=$(this).parents(".subTableCont").find(".subTableList").index($(this).parents(".subTableList"))+1;
+				//console.log(_i)
+				if(l==_i){
+					$(this).children(".hover_ck").css({"right":"30px","top":$(this).height()-80});
+					$(this).find(".hover_ckdot").css({"top":"32px","transform":"rotate(180deg)","-webkit-transform":"rotate(180deg)"});
+				}else{
+					$(this).children(".hover_ck").css({"right":"30px","top":$(this).height()-10});
+					$(this).find(".hover_ckdot").removeAttr("style").css("right","20px");
+				}
+				
 			 	$(this).children(".hover_ck").show();
-			 	if($(this).parents(".subTableCont").find(".subTableList").length<=7){
-			 		$(".mCustomScrollBox").css("overflow","visible");
-			 		$(".mCSB_container").css("overflow","visible");
-			 	}			 	
+
+			 	// if($(this).parents(".subTableCont").find(".subTableList").length<=7){
+			 	// 	$(this).parents(".mCustomScrollBox").css("overflow","visible");
+			 	// 	$(this).parents(".mCSB_container").css("overflow","visible");
+			 	// }			 	
 
 			})
 
 
 			$("body").on("mouseout",".smallsetHover",function(){
 				$(this).children(".hover_ck").hide();
-				if($(this).parents(".subTableCont").find(".subTableList").length<=7){
-			 		$(".mCustomScrollBox").css("overflow","hidden");
-			 		$(".mCSB_container").css("overflow","hidden");
-			 	}	
+				// if($(this).parents(".subTableCont").find(".subTableList").length<=7){
+			 // 		$(".mCustomScrollBox").css("overflow","hidden");
+			 // 		$(".mCSB_container").css("overflow","hidden");
+			 // 	}	
 				
 			})
 

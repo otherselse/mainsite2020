@@ -49,7 +49,7 @@ $(function(){
 				}else{
 					obj.find(".openBtnTxt").text('收起');
 					obj.addClass("open");
-					obj.parents(".tableCont ").find(".subTable").html(html); //异步获取子页面内容
+					//obj.parents(".tableCont ").find(".subTable").html(html); //异步获取子页面内容
 					obj.parents(".tableCont").find(".subTableCont").mCustomScrollbar({
 					    theme:"minimal-dark",
 					    callbacks:{
@@ -64,23 +64,23 @@ $(function(){
 
 function onTotalScroll(obj){
 	//每次滚动底部增加5条;
-	var html='	   	<div class="subTableList">'+
-	        '    		<div class="l pct20 indent20 ell"><label class="dib iconcheckbox poi vm mr5 rel">'+
-			'					<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="calculateChecked(this)" weight="33.554" price="3456" rid="5611353">'+
-			'				</label>QSTE50TM</div>'+
-			'            <div class="l pct15 ell">2.500*1050*2100</div>'+
-			'            <div class="l pct20 tc ell">12</div>'+
-			'            <div class="l pct15 tc ell">33.554</div>'+            
-			'            <div class="l pct20 tc red">¥3456</div>'+
-			'            <div class="l pct10 tc smallsetHover rel"><a href="javascript:void(0)" class="green">议价购买</a><span class="hover_ck g28 f12"><i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>议价购买：价格可议，销售合同需核价生成</span></div>'+
-	        '    	</div>'
-	 var str=""
-	 for(var i=0;i<5;i++){
-	 	str=str+html
-	 }
+	// var html='	   	<div class="subTableList">'+
+	//         '    		<div class="l pct20 indent20 ell"><label class="dib iconcheckbox poi vm mr5 rel">'+
+	// 		'					<input type="checkbox" class="opacity-checkbox abs poi chooseOne" onclick="calculateChecked(this)" weight="33.554" price="3456" rid="5611353">'+
+	// 		'				</label>QSTE50TM</div>'+
+	// 		'            <div class="l pct15 ell">2.500*1050*2100</div>'+
+	// 		'            <div class="l pct20 tc ell">12</div>'+
+	// 		'            <div class="l pct15 tc ell">33.554</div>'+            
+	// 		'            <div class="l pct20 tc red">¥3456</div>'+
+	// 		'            <div class="l pct10 tc smallsetHover rel"><a href="javascript:void(0)" class="green">议价购买</a><span class="hover_ck g28 f12"><i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>议价购买：价格可议，销售合同需核价生成</span></div>'+
+	//         '    	</div>'
+	//  var str=""
+	//  for(var i=0;i<15;i++){
+	//  	str=str+html
+	//  }
 
-	$(obj).find(".mCSB_container").append(str);
-	$(obj).mCustomScrollbar("update");
+	// $(obj).find(".mCSB_container").append(str);
+	// $(obj).mCustomScrollbar("update");
 	//console.log(obj)
 
 }

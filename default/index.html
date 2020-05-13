@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/style/lib.css">
 	<link rel="icon" href="http://resource.lgsteel.cn/public/images/favicon.ico" mce_href="http://resource.lgsteel.cn/public/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="http://resource.lgsteel.cn/public/style/fontAwesome/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908.css"> -->
+	<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908.css">
 	<link rel="stylesheet" href="../css/lgSite1908.css">
-	<link rel="stylesheet" href="../css/lgSite1908banner.css">
-		<!-- <link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908banner.css"> -->
+	<!-- <link rel="stylesheet" href="../css/lgSite1908banner.css"> -->
+		<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908banner.css">
 
 	
 	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/jquery-1.8.3.min.js"></script>
@@ -26,8 +26,8 @@
 		<div class="w1180 auto">			
 			<div class="l h_banner">
 				<div class="flexslider">
-					<ul class="slides setBigBg" >
-						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_jiayu.jpg') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_jiayu.jpg">
+					<ul class="slides" >
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_jiayu.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_jiayu.jpg">
 							<a href="http://shjy.legangyun.cn" target="_blank" class="set-a"></a>
 						</li>
 						
@@ -48,12 +48,12 @@
 								<i class="abs dib stfw2019Logo"></i>
 							</a>
 						</li> -->
-						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/search-Immortal.jpg') center no-repeat">
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/search-Immortal.png') center no-repeat">
 							<a href="http://www.lgsteel.com/default/lgSearch"  class="set-a rel">
 								<i class="dib immortal-circle abs"></i>
 							</a>
 						</li>
-						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/zzsfptbg.jpg') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/small/zzsfptbg.jpg">
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/zzsfptbg.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/small/zzsfptbg.jpg">
 							<i class="abs dib zzsfptup u-sfup"></i>
 							<i class="abs dib zzsfptdown u-sfdown"></i>
 						</li>
@@ -843,38 +843,38 @@
 
 		$(function(){
 
-			  var os = function (){
-			    var ua = navigator.userAgent,
-			    isWindowsPhone = /(?:Windows Phone)/.test(ua),
-			    isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
-			    isAndroid = /(?:Android)/.test(ua),
-			    isFireFox = /(?:Firefox)/.test(ua),
-			    isChrome = /(?:Chrome|CriOS)/.test(ua),
-			    isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
-			    isPhone = /(?:iPhone)/.test(ua) && !isTablet,
-			    isPc = !isPhone && !isAndroid && !isSymbian;
-			    return {
-			        isTablet: isTablet,
-			        isPhone: isPhone,
-			        isAndroid: isAndroid,
-			        isPc: isPc
-			    };
-			}();
+			//   var os = function (){
+			//     var ua = navigator.userAgent,
+			//     isWindowsPhone = /(?:Windows Phone)/.test(ua),
+			//     isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+			//     isAndroid = /(?:Android)/.test(ua),
+			//     isFireFox = /(?:Firefox)/.test(ua),
+			//     isChrome = /(?:Chrome|CriOS)/.test(ua),
+			//     isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+			//     isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+			//     isPc = !isPhone && !isAndroid && !isSymbian;
+			//     return {
+			//         isTablet: isTablet,
+			//         isPhone: isPhone,
+			//         isAndroid: isAndroid,
+			//         isPc: isPc
+			//     };
+			// }();
 
-			if (os.isAndroid || os.isPhone) {
-				  $(".setBigBg").find("li").each(function(){
-					var small=$(this).css("backgroundImage");
-					var left=small.substring(0,small.lastIndexOf("/"));	
-					var right=small.substring(small.lastIndexOf("/"),small.length).replace("png","jpg")
-					var mypic=left+"/small"+right
-					$(this).css("background-image",mypic);
-					//console.log(mypic);
-				})
-			} else if (os.isTablet) {
-			  console.log("平板")
-			} else if(os.isPc) {
-			  console.log("电脑")
-			}
+			// if (os.isAndroid || os.isPhone) {
+			// 	  $(".setBigBg").find("li").each(function(){
+			// 		var small=$(this).css("backgroundImage");
+			// 		var left=small.substring(0,small.lastIndexOf("/"));	
+			// 		var right=small.substring(small.lastIndexOf("/"),small.length).replace("jpg","png")
+			// 		var mypic=left+"/small"+right
+			// 		$(this).css("background-image",mypic);
+			// 		//console.log(mypic);
+			// 	})
+			// } else if (os.isTablet) {
+			//   console.log("平板")
+			// } else if(os.isPc) {
+			//   console.log("电脑")
+			// }
 
 			//用于选中菜单
 			$("#nav").find("a").removeClass("on");  

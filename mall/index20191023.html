@@ -529,7 +529,7 @@
 							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
 							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
 					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
-					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					        	<span class="f12 dib"><span class="f12 dib"> 交易时间周一至周日<span class="red">10:32-17:00</span>，其余时间价格仅供参考（库存更新维护）。如有任何疑问,随时欢迎所有货主致电，期待您的来电！</span></span></span>
 					     	 </span>
 						</div>
 					</div>
@@ -548,7 +548,7 @@
 							<a saasuserid="0A" ishaveincart="0" lockplanweight="" islockplan="" onclick="mallIndexUtil.addCart(this,'3476831','1');" href="javascript:;" supid="50" class="green">议价购买</a>
 							 <span class="hover_ck tl" style="right: 30px; top: 39px; display: none;">
 					         	<i class="dib abs hover_ckdot" style="right:20px"><i class="dib abs hover_ckdot2"></i></i>
-					        	<span class="f12 dib"><span class="f12 dib"> 议价购买：价格可议，销售合同需核价生成</span></span>
+					        	<span class="f12 dib"><span class="f12 dib">交易时间周一至周日<span class="red">10:32-17:00</span>，其余时间价格仅供参考（库存更新维护）。如有任何疑问,随时欢迎所有货主致电，期待您的来电！</span></span>
 					     	 </span>
 						</div>
 					</div>
@@ -732,8 +732,8 @@
 				var _i=$(this).parents(".subTableCont").find(".subTableList").index($(this).parents(".subTableList"))+1;
 				//console.log(_i)
 				if(l==_i){
-					$(this).children(".hover_ck").css({"right":"30px","top":$(this).height()-80});
-					$(this).find(".hover_ckdot").css({"top":"32px","transform":"rotate(180deg)","-webkit-transform":"rotate(180deg)"});
+					$(this).children(".hover_ck").css({"right":"30px","top":0-$(this).children(".hover_ck").outerHeight(true)});
+					$(this).find(".hover_ckdot").css({"top":$(this).children(".hover_ck").outerHeight(true)-2,"transform":"rotate(180deg)","-webkit-transform":"rotate(180deg)"});
 				}else{
 					$(this).children(".hover_ck").css({"right":"30px","top":$(this).height()-10});
 					$(this).find(".hover_ckdot").removeAttr("style").css("right","20px");

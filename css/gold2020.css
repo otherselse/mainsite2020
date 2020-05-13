@@ -124,11 +124,11 @@
 
 /*phone*/
 @media only screen and (max-width: 1080px) {
-	.goldbg{background: url('../images/gold/m/goldBg.jpg') top center no-repeat #49537e;background-size:100% 100%;}
+	.goldbg{background: url('../images/gold/m/goldBg.png') top center no-repeat #49537e;background-size:100% 100%;}
 	.goldpart2{background: #f9f9f9;background-size:100% 100%;}
-	.goldRule{background: url('../images/gold/m/Bg-Regi.jpg') top center no-repeat #343c67;background-size:100% 100%;}
-	.goldDetailbg{background: url('../images/gold/m/Bg-Bussi.jpg') top center no-repeat #363f6a;background-size:100% 100%;}
-	.goldChamp{background: url(../images/gold/m/Bg-Champain.jpg) #646f9f; }
+	.goldRule{background: url('../images/gold/m/Bg-Regi.png') top center no-repeat #343c67;background-size:100% 100%;}
+	.goldDetailbg{background: url('../images/gold/m/Bg-Bussi.png') top center no-repeat #363f6a;background-size:100% 100%;}
+	.goldChamp{background: url(../images/gold/m/Bg-Champain.png) #646f9f; }
 }
 /*pc*/
 @media only screen and (max-width: 1920px) and (min-width: 1081px) {

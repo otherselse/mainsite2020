@@ -4,6 +4,7 @@ var lgEcharts={
                 var ds=[data0,data1,data2,data3];
                 var echartItemName=[];
                 
+               
                 
                 for(var j=0;j<echartItem.length;j++){
                     echartItemName.push(echartItem[j]);
@@ -18,7 +19,7 @@ var lgEcharts={
                                 type:'line',
                                 smooth:true,
                                //symbol: 'none',
-                               showSymbol: false,
+                                showSymbol: false,
                                 smooth:0.3,
                                 sampling: 'average',
                                 itemStyle: {
@@ -30,7 +31,20 @@ var lgEcharts={
 
                 }
             },
+            getM:function(){
+                var myarr=[];
+                for(var i=0;i<applyPriceLines.length;i++){
+                    myarr.push(applyPriceLines[i].salePrice)
+                }
+                var mymin=Math.floor(myarr.min()*0.01)*100-100;
+                var mymax=Math.round(myarr.max()*0.01)*100+200;
+
+                return mymin+"|"+mymax
+            },
             init:function(){
+                var m=lgEcharts.getM();
+                var mym=m.split("|")
+
                 lgEcharts.getData();
                 var dom = document.getElementById("containterChart");
                 var myChart = echarts.init(dom);
@@ -76,8 +90,8 @@ var lgEcharts={
                         maxInterval: 30 * 24 * 3600 * 1000
                     }],
                     yAxis: [{
-                        min:3400,
-                        max:4600,
+                        min:mym[0],
+                        max:mym[1],
                         interval:200,
                         axisLine:{
                             lineStyle:{
@@ -140,3 +154,26 @@ var lgEcharts={
     $(function(){
             lgEcharts.init();
     })
+
+    //最小值
+Array.prototype.min = function() {
+var min = this[0];
+var len = this.length;
+for (var i = 1; i < len; i++){ 
+if (this[i] < min){ 
+min = this[i]; 
+} 
+} 
+return min;
+}
+//最大值
+Array.prototype.max = function() { 
+var max = this[0];
+var len = this.length; 
+for (var i = 1; i < len; i++){ 
+if (this[i] > max) { 
+max = this[i]; 
+} 
+} 
+return max;
+}

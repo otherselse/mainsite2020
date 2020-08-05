@@ -478,5 +478,8 @@ input::-ms-input-placeholder {color: #ADADAD;}
 	.ruleshbg{background: url('../images/qa/rulesbnr.png') top center no-repeat;background-size: 100%}
 	.contacthbg{background: url('../images/qa/contactbnr.png') top center no-repeat;background-size: 100%}
 	.termhbg{background: url('../images/qa/termbnr.png') top center no-repeat;background-size: 100%}
+  .aboutHrIso{background: url('../images/about/renzhengdi.png') top center no-repeat;background-size: 100% 100%}
+
+
 	
 }

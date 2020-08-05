@@ -26,16 +26,19 @@
 		<div class="w1180 auto">			
 			<div class="l h_banner">
 				<div class="flexslider">
-					<ul class="slides" >
-						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_jiayu.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_jiayu.jpg">
-							<a href="http://shjy.legangyun.cn" target="_blank" class="set-a"></a>
+					<ul class="slides" id="sortBanner" >
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/cxpt2020.jpg') center no-repeat">
+						</li>
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/dpush2020.jpg') center no-repeat">
+						</li>
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/bedu2020.jpg') center no-repeat">
 						</li>
 						
-						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_bm.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_bm.png">
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_bm.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_bm.png" id="list_bm">
 							<a href="http://shbm.legangyun.com" target="_blank" class="set-a"></a>
 						</li>
 						
-						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_tg.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_tg.png">
+						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/customer/banner_tg.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/customer/small/banner_tg.png" id="list_tg">
 							<a href="http://shop.cntghy.com" target="_blank" class="set-a"></a>
 						</li>
 						<li style="background:url('http://resource.lgsteel.cn/mainSite19/images/banner/legangyunbg.png') center no-repeat" mobile="http://resource.lgsteel.cn/mainSite19/images/banner/small/legangyunbg.png">
@@ -827,7 +830,8 @@
  <script type="text/javascript" src="../js/indexMycharts.js"></script>
  <script type="text/javascript" src="../js/scroll.js"></script> <!-- 右侧滚动条 -->
 	<script type="text/javascript" src="jsonDate.js"></script>  <!-- 通过json 获取applyPriceLines 开发时去掉 -->	
-
+ 	<script type="text/javascript" src="http://resource.lgsteel.cn/mainSite19/js/setBanner.js"></script>
+<!-- <script type="text/javascript" src="setBanner.js"></script> -->
 	<script type="text/javascript">
 		//shop		
 		jQuery(".h_p3ShopEndCont").slide({ mainCell: "ul", autoPage: true, effect: "left", autoPlay: false, vis: 5, delayTime: 500 ,pnLoop:false});
@@ -841,8 +845,21 @@
 		var series=[];
 
 
+			
+			
+			//console.log(_bannerSortarr)
+			//_bannerSortarr.unshift(_bannerSortarr.pop());
+			//console.log(_bannerSortarr)
+		
+			
+
+
+			
+
+
 		$(function(){
 
+			
 			//   var os = function (){
 			//     var ua = navigator.userAgent,
 			//     isWindowsPhone = /(?:Windows Phone)/.test(ua),
@@ -890,6 +907,15 @@
 				}
 			})
 
+
+			
+
+
+
+
+			_bannerSort.initBanner()
+			
+
 			// 配置轮播图
 			$('.flexslider').flexslider({
 				directionNav: true,
@@ -917,6 +943,8 @@
 				$(".h_p3ShopMidC ").hide();
 				$(".h_p3ShopMidC ").eq(index).show();
 			})
+
+
 
 
 			

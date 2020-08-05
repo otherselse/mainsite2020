@@ -37,17 +37,18 @@
 	</div> <!-- title end -->
 	<div class="loginMain">
 		<div class="log_flexslider">
-			<ul class="slides">				
+			<ul class="slides" id="sortBanner">				
 				<!-- <li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/sh-bm_login.jpg) center no-repeat">
 					<a href="http://shbm.legangyun.com" target="_blank" class="tg_bannerherf dib"></a>
 				</li>
 				<li style="background:url(http://resource.lgsteel.cn//mainSite/images/banner/customer/seekPerson_login.jpg) center no-repeat"></li>
 				<li style="background:url(http://resource.lgsteel.cn//mainSite/images/login/innerBg.jpg) center top"></li>
 				<li style="background:url(http://resource.lgsteel.cn//mainSite/images/login/legangyun.jpg) center top"><a href="http://www.lgsteel.com/lgCloud/index" class="tg_bannerherf dib"></a></li> -->
-				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/seekPerson_login.jpg) center no-repeat"><a href="http://www.lgsteel.cn/default/indexShow.html?notice.id=4021&notice.isTop=0"  target="_blank" class="tg_bannerherf dib"></a></li>
-				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/sh-bm_login.jpg) center no-repeat"><a href="http://shbm.legangyun.com" target="_blank" class="tg_bannerherf dib"></a></li>
-				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/banner-jy-login.jpg) center no-repeat"><a href="http://shjy.legangyun.cn" target="_blank" class="tg_bannerherf dib"></a></li>
-				<li style="background:url(http://resource.cntghy.com/tanggang/images/scrollimg1.jpg) center top"><a href="http://shop.cntghy.com"  target="_blank" class="tg_bannerherf dib"></a></li>
+			<!-- 	<li style="background: url(&quot;http://resource.lgsteel.cn/mainSite/images/banner/customer/seekPerson_login.jpg&quot;) center center no-repeat; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" class="flex-active-slide"><a href="http://www.lgsteel.cn/default/indexShow.html?notice.id=4336&amp;notice.isTop=0" target="_blank" class="tg_bannerherf db" style="height:100%"></a></li> -->
+				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/seekPerson_login.jpg) center no-repeat" ><a href="http://www.lgsteel.cn/default/indexShow.html?notice.id=4021&notice.isTop=0"  target="_blank" class="tg_bannerherf dib"></a></li>
+				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/sh-bm_login.jpg) center no-repeat" id="list_bm"><a href="http://shbm.legangyun.com" target="_blank" class="tg_bannerherf dib"></a></li>
+				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/banner/customer/banner-jy-login.jpg) center no-repeat" id="list_jy"><a href="http://shjy.legangyun.cn" target="_blank" class="tg_bannerherf dib"></a></li>
+				<li style="background:url(http://resource.cntghy.com/tanggang/images/scrollimg1.jpg) center top" id="list_tg"><a href="http://shop.cntghy.com"  target="_blank" class="tg_bannerherf dib"></a></li>
 				<li style="background:url(http://resource.lgsteel.cn/mainSite/images/login/legangyun.jpg) center top"><a href="http://www.lgsteel.com/lgCloud/index" class="tg_bannerherf dib"></a></li>
 
 			</ul>			
@@ -118,9 +119,11 @@
 
 	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="http://resource.lgsteel.cn//public/js/scroll/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/mainSite19/js/setBanner.js"></script>
 	<script type="text/javascript">
 		 var wait = 120;
 		$(function () {
+			_bannerSort.initBanner()
 			// 配置轮播图
 			$('.log_flexslider').flexslider({
 				directionNav: false,

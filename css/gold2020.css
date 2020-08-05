@@ -106,8 +106,8 @@
 .orderSearchRight{background-color: #fff;width: 300px;border-left:1px solid #E8D9C3;}
 .w170{width: 170px}
 .lh55{line-height: 55px;height:55px;}
-.goldChapdiv{background: url(../images/gold/goldimgBgb.jpg);width: 158px;height: 210px;float:left;}
-.avatar-box-imgbg{width: 92px;height: 118px;float: left;background: url(../images/gold/goldimgbgS.jpg);}
+.goldChapdiv{background:#fff;width: 158px;height: 210px;float:left;}
+.avatar-box-imgbg{width: 92px;height: 118px;float: left;background: #fff;}
 
 
 
